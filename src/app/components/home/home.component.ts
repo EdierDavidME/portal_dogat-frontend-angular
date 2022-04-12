@@ -16,9 +16,4 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  linklogin(){
-    this.router.navigate(['login'])
-
-  }
-
 }
