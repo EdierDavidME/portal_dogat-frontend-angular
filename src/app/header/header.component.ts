@@ -16,5 +16,10 @@ export class HeaderComponent implements OnInit {
   linklogin(){
     this.router.navigate(['login'])
 
+    
+  }
+  linkregistrar(){
+    this.router.navigate(['registrar'])
+
   }
 }

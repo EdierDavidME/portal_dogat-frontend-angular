@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./registrar.component.css']
 })
 export class RegistrarComponent implements OnInit {
+  router: any;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
