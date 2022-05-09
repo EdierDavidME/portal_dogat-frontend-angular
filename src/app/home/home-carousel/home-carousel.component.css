@@ -1,0 +1,13 @@
+.ccenterpls {
+    margin-top: 1% !important;
+    margin: 0 auto;
+}
+
+.carousel {
+    height: 300px;
+    object-fit: cover;
+    width: 95%;
+    border: 7px;
+    border-radius: 15px;
+    padding: 2px;
+}

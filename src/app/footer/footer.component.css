@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 26%;
+    height: 90px;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 32px 25%;
+
+    /* @media (max-width: 992px) {
+        margin-left: 0;
+    } */
+}
