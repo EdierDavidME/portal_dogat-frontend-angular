@@ -18,6 +18,9 @@ import { HomeComponent } from './home/home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeCarouselComponent } from './home/home-carousel/home-carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginFormComponent } from './login/login-form/login-form.component';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { AboutComponent } from './about/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeCarouselComponent,
     FooterComponent,
+    LoginFormComponent,
+    ContactFormComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
