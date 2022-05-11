@@ -1,5 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
-import { Carousel } from './carousel.model';
+import { Carousel } from '../models/carousel.model';
 
 @Injectable()
 export class CarouselService {

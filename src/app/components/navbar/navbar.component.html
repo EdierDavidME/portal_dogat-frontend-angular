@@ -63,12 +63,15 @@
         </div>
       </div>
     </form>
-    <button
+    <button *ngIf="!appGlobal.usuario.id || appGlobal.usuario.id == 0" mat-icon-button class="btn-user" routerLink="login">
+      <mat-icon>login</mat-icon>
+    </button>
+    <button *ngIf="appGlobal.usuario.id > 0"
       class="btn btn-outline-info rounded-circle float-right bg-success btn-user"
-      type="submit"
-      routerLink="/login"
+      type="button"
+      (click)="linkoutlogin()"
     >
-      D
+      {{appGlobal.usuario.nombre.length > 0? appGlobal.usuario.nombre[0] : ''}}
     </button>
   </div>
 </nav>

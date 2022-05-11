@@ -4,7 +4,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './components/login/login.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -14,10 +15,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
-import { HomeComponent } from './home/home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeCarouselComponent } from './home/home-carousel/home-carousel.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NuevoUsuarioComponent } from './components/nuevo-usuario/nuevo-usuario.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeCarouselComponent,
     FooterComponent,
+    LoginComponent,
+    NuevoUsuarioComponent
   ],
   imports: [
     BrowserModule,
