@@ -31,7 +31,7 @@
           <label class="form-label">Celular</label>
           <input class="form-control" name="celular" 
             id="exampleFormControlInput1" required style="width: 18rem; margin: 0.5rem;" min="10" max="13" required>
-          <span >Error</span>
+        
         </div>
 
         <div class="col-md-4 position-relative">
@@ -48,7 +48,7 @@
           <input class="form-control" name="ciudad" #ciudad="ngModel" 
             id="exampleFormControlInput1" required style="width: 18rem; margin: 0.5rem;" ngModel minlength="4"
             maxLength="20" required>
-          <span *ngIf="ciudad.touched && !ciudad.valid">Error</span>
+         
         </div>
 
         <div class="col-md-4 position-relative">
@@ -56,7 +56,7 @@
           <input class="form-control" name="barrio" #barrio="ngModel" 
             id="exampleFormControlInput1" required style="width: 18rem; margin: 0.5rem;" ngModel minlength="4"
             maxLength="20" required>
-          <span *ngIf="barrio.touched && !barrio.valid">Error</span>
+         
         </div>
 
         

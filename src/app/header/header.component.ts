@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  showFiller = false;
 
   constructor(private router: Router ) { }
 

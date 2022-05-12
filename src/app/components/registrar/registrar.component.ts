@@ -13,6 +13,9 @@ export class RegistrarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  linkregistrar(){
+    this.router.navigate(['registrar'])
+
+  }
 
 }

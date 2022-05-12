@@ -16,7 +16,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  linkhome(){
+    this.router.navigate(['home'])
 
+  }
 
 
   

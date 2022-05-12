@@ -1,36 +1,40 @@
 
-    
-    <p>
-        <mat-toolbar color="primary">
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-            <mat-menu #animals="matMenu">
-                <button mat-menu-item >Vertebrates</button>
-                <button mat-menu-item >Invertebrates</button>
-              </mat-menu>
-              
-              <mat-menu #vertebrates="matMenu">
-                <button mat-menu-item >Fishes</button>
-                <button mat-menu-item >Amphibians</button>
-                <button mat-menu-item >Reptiles</button>
-                <button mat-menu-item>Birds</button>
-                <button mat-menu-item>Mammals</button>
-              </mat-menu>
-          </button>
-        
-          <span>My App</span>
-          <button mat-raised-button color="primary" (click)="linklogin()" >login</button>
-          <button mat-raised-button color="primary">Primary</button>
-          <button mat-raised-button color="primary">Primary</button>
+  <mat-toolbar class="example-icon">
 
-          <span class="example-spacer"></span>
-          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <mat-icon>favorite</mat-icon>
-          </button>
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-            <mat-icon>login</mat-icon>
-          </button>
 
-         
-        </mat-toolbar>
-      </p>
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()"
+      aria-label="Example icon-button with menu icon">
+      <mat-icon *ngIf="!drawer.opened else menu_o">menu</mat-icon>
+
+      <ng-template #menu_o>
+        <mat-icon>menu_open</mat-icon>
+      </ng-template>
+
+    </button>
+
+    <span>Menu</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-list role="list">
+      <mat-list-item role="listitem">Item 1</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+
+  </div>
+
+</mat-drawer-container>
