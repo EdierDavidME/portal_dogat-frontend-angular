@@ -21,6 +21,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginFormComponent } from './login/login-form/login-form.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 import { AboutComponent } from './about/about/about.component';
+import { MascotasListadoComponent } from './home/mascotas-listado/mascotas-listado.component';
+import { MascotaComponent } from './home/mascota/mascota.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { AboutComponent } from './about/about/about.component';
     LoginFormComponent,
     ContactFormComponent,
     AboutComponent,
+    MascotasListadoComponent,
+    MascotaComponent,
   ],
   imports: [
     BrowserModule,
