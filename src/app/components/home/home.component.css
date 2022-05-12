@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 .example-card {
     max-width: 400px;
     margin-bottom: 8px;
   }
+=======
+.principal-carousel {
+    /* center container */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+>>>>>>> d0543466f122d6ef516dab30e0a543a867e83be0
